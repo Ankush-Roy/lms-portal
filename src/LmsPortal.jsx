@@ -472,7 +472,7 @@ function ChatSlideOver({ open, onClose }) {
             <div className="shrink-0 flex items-center justify-between px-3 py-2 border-b border-slate-200 bg-white">
               <div className="flex items-center gap-2">
                 <span className="inline-flex h-2 w-2 rounded-full bg-emerald-500" />
-                <h3 className="text-sm font-semibold">LMS Copilot</h3>
+                <h3 className="text-sm font-semibold">LMS Chatbot</h3>
               </div>
               <button
                 onClick={onClose}
@@ -485,7 +485,7 @@ function ChatSlideOver({ open, onClose }) {
             {/* iframe fills the rest */}
             <div className="flex-1 min-h-0">
               <iframe
-                title="LMS Copilot"
+                title="LMS Chatbot"
                 src={CHATBOT_IFRAME_SRC + (CHATBOT_IFRAME_SRC.includes('?') ? '&' : '?') + 'embed=1'}
                 className="w-full h-full block"
                 allow="clipboard-write"
@@ -549,7 +549,7 @@ export default function LmsPortal() {
         onClick={() => setChatOpen(true)}
         className="fixed bottom-5 right-5 rounded-full shadow-lg bg-gradient-to-r from-indigo-600 to-sky-600 text-white px-6 py-4 text-sm font-semibold"
       >
-        Ask Copilot
+        IICA
       </motion.button>
 
       <ChatSlideOver open={chatOpen} onClose={() => setChatOpen(false)} />
